@@ -1,5 +1,52 @@
-print("Menu\n-------------")
-print("1. Encode\n2. Decode\n3. Quit")
-opt = print("\nPlease enter an option: ")
-pw = print("Please enter your password to encode: ")
+# Breanna Blackwood, 15 July 2023
 
+
+def encode(password):
+""" Encodes the user's inputted password by incrementing each number by 3."""
+	encoded_password = []  # create empty list
+	for num in password:  # increment each number in password by 3 for encoding
+		if num == 0:
+			num = 3
+		elif num == 1:
+			num = 4
+		elif num == 2:
+			num = 5
+		elif num == 3:
+			num = 6
+		elif num == 4:
+			num = 7
+		elif num == 5:
+			num = 8
+		elif num == 6:
+			num = 9
+		elif num == 7:
+			num = 0
+		elif num == 8:
+			num = 1
+		elif num == 9:
+			num = 2
+		encoded_password.append()  # add the new number to the list
+	return encoded_password
+
+
+def main():
+	# print the menu
+	while True:
+		print("Menu\n-------------")
+		print("1. Encode\n2. Decode\n3. Quit")
+		print("\nPlease enter an option:", end=" ")
+		opt = int(input())
+		if opt == 1:  # implement encode function
+			print("Please enter your password to encode:", end=" ")
+			pw = input()
+			encode(pw)
+			print("Your password has been encoded and stored!")
+		elif opt == 2:  # implement decode function. Partner will code.
+			pass
+		else:  # exit the program 
+			exit()
+
+
+
+if __name__ == "__main__":  # run the main function
+	main()

@@ -43,8 +43,10 @@ def main():
 			print("Your password has been encoded and stored!")
 		elif opt == 2:  # implement decode function. Partner will code.
 			pass
-		else:  # exit the program 
+		elif opt == 3:  # exit the program
 			exit()
+		else:
+			print("Please enter a value between 1 and 3.")
 
 
 

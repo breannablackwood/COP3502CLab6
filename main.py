@@ -26,7 +26,8 @@ def encode(password):
 		elif num == 9:
 			num = 2
 		encoded_password.append()  # add the new number to the list
-	return encoded_password
+	enc = "".join(encoded_password)
+	return enc
 
 
 def main():

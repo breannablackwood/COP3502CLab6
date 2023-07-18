@@ -6,28 +6,7 @@ def encode(password):
 	for num in password:  # increment each number in password by 3 for encoding
 		new = int(num) + 3
 		encoded_password.append(str(new))  # add the new number to the list
-		if num == 0:
-			num = 3
-		elif num == 1:
-			num = 4
-		elif num == 2:
-			num = 5
-		elif num == 3:
-			num = 6
-		elif num == 4:
-			num = 7
-		elif num == 5:
-			num = 8
-		elif num == 6:
-			num = 9
-		elif num == 7:
-			num = 0
-		elif num == 8:
-			num = 1
-		elif num == 9:
-			num = 2
-		encoded_password.append()  # add the new number to the list
-	enc = "".join(encoded_password)
+	enc = "".join(encoded_password)  # join the components of the list together
 	return enc
 
 

@@ -4,10 +4,8 @@ def encode(password):
 """ Encodes the user's inputted password by incrementing each number by 3."""
 	encoded_password = []  # create empty list
 	for num in password:  # increment each number in password by 3 for encoding
-<<<<<<< HEAD
 		new = int(num) + 3
 		encoded_password.append(str(new))  # add the new number to the list
-=======
 		if num == 0:
 			num = 3
 		elif num == 1:
@@ -29,7 +27,6 @@ def encode(password):
 		elif num == 9:
 			num = 2
 		encoded_password.append()  # add the new number to the list
->>>>>>> abfc67bfb04708663a6e519b498edb7414dcfc81
 	enc = "".join(encoded_password)
 	return enc
 
